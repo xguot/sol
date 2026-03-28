@@ -1,7 +1,0 @@
-name = "sol"
-version = "0.1.0"
-keywords = ["math"]
-defaultTargets = ["Sol"]
-
-[[lean_lib]]
-name = "Sol"
