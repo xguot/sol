@@ -1,8 +1,8 @@
 import Lake
 open Lake DSL
 
-package «Proof»
+package «sol»
 
-lean_lib «Proof»
+lean_lib «Sol»
 
 require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ "v4.16.0"
