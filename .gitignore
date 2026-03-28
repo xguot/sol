@@ -1,0 +1,24 @@
+# Go
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+atcoder/go.sum
+
+# Lean
+.lake/
+lake-packages/
+*.olean
+*.ilean
+*.c
+
+# Editor
+.DS_Store
+.nvim/
+*.swp
+*.swo
+
+# Practice outputs
+luogu/p1003/*.out
