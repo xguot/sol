@@ -1,12 +1,17 @@
 name: Create Release
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   push:
     branches:
-      - 'main'
-      - 'master'
+      - "main"
+      - "master"
     paths:
-      - 'lean-toolchain'
+      - "lean-toolchain"
 
 jobs:
   lean-release-tag:
@@ -15,8 +20,8 @@ jobs:
     permissions:
       contents: write
     steps:
-    - name: lean-release-tag action
-      uses: leanprover-community/lean-release-tag@v1
-      with:
-        do-release: true
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: lean-release-tag action
+        uses: leanprover-community/lean-release-tag@v1
+        with:
+          do-release: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
